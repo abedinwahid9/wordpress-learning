@@ -1,0 +1,20 @@
+/* =================================
+
+Theme Name: st wordpress learning
+Theme URI: #
+Author: abedin wahid
+Author URI: #
+Description: this site only for practice and learning.
+Requires at least: 6.1
+Tested up to: 6.6
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: abedinwahid
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+============================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
