@@ -18,3 +18,42 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+}
+
+.menu li:hover a {
+  color: red;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+#header .right_menu .img {
+  order: 2;
+}
+#header .right_menu .nav {
+  order: 1;
+}
+#header .left_menu .img {
+  order: 1;
+}
+#header .left_menu .nav {
+  order: 2;
+}
+#header .center_menu {
+  flex-direction: column;
+}

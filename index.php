@@ -19,20 +19,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="container mx-auto ">
-        <div class="flex justify-between items-center">
-            <div>
+    <div id="header" class="container  mx-auto ">
+        <div class="flex  justify-between items-center <?php echo get_theme_mod("st_menu_position"); ?>">
+            <div class="img">
                 <img class="w-20 h-full" src="<?php echo get_theme_mod("st_logo"); ?>" alt="logo">
             </div>
-            <div>
-                <ul class="flex gap-5 ">
-                    <li class="hover:text-red-700">home</li>
-                    <li class="hover:text-red-700">menu</li>
-                    <li class="hover:text-red-700">about</li>
-                    <li class="hover:text-red-700">contact</li>
-                    <li class="hover:text-red-700">blogs</li>
-                    <li class="hover:text-red-700">help</li>
-                </ul>
+            <div class="nav">
+                <?php wp_nav_menu(array("theme_location" => "main_menu", "menu_id" => "nav")) ?>
             </div>
         </div>
     </div>
